@@ -1,0 +1,21 @@
+﻿@model MvcPWy.ViewModels.CustomerViewModel
+
+
+@{
+    ViewBag.Title = "SearchByFilterView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search By Filter</h2>
+    <div id="searchOptions" class="ui-corner-all">
+        <p id="dialogActualizarFirmasMessage">
+        </p>
+        <br />
+        Search by Hobby
+        @Html.DropDownListFor(m => m.ID, Model.HobbyList)
+
+        Search by Preferred Color
+        @Html.DropDownListFor(m => m.ID, Model.PreferredColorList)
+        <br />
+        <br />
+    </div>
